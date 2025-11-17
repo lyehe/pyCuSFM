@@ -29,6 +29,12 @@ dependencies = [
 [project.urls]
 "Homepage" = "https://gitlab-master.nvidia.com/visual_mapping/pycusfm"
 
+[project.optional-dependencies]
+test = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+]
+
 [project.scripts]
 cusfm_cli = "pycusfm.cusfm_cli:main"
 cusfm_tool = "pycusfm.binary_runner:main"
